@@ -7,12 +7,33 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors:{
+        whiteColor:"#FFF",
+        secondaryColor:"#E5EEFF",
+        primaryColor:"#3F6EEC",
+        primaryTextColor:"#05264E",
+        textColor:"#777777",
       },
+      keyframes:{
+        move:{
+          "50%": {transform: 'translateY(-1rem)'}
+        }
+      },
+      animation:{
+        'movingY':'move 2s linear infinite'
+      }
     },
+    container:{
+      center:true,
+      padding:{
+        DEFAULT:'1rem',
+        sm:'1.5rem'
+      }
+    },
+    fontFamily:{
+      hindu:['Hindu Madurai','sans-serif'],
+      readex:['Readex Pro','sans-serif']
+    }
   },
   plugins: [],
 }
