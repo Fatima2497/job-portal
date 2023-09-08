@@ -21,3 +21,9 @@
         @apply text-white bg-primaryColor hover:opacity-75;
     }
 }
+
+@layer utilities {
+    .content{
+        @apply bg-secondaryColor
+    }
+}
